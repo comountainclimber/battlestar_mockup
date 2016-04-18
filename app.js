@@ -1,7 +1,7 @@
 // Requires \\
 var express = require('express');
 var bodyParser = require('body-parser');
-var sassMiddleware = require('node-sass-middleware');
+// var sassMiddleware = require('node-sass-middleware');
 var path = require('path');
 
 // Create Express App Object \\
