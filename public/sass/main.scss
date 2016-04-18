@@ -1,0 +1,107 @@
+@import 'navigation';
+@import 'mobile_navigation';
+@import 'news_feed';
+@import 'global_variables';
+
+body {
+  background-color: $bodycolor;
+  height: 200px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  background-color:$lightgrey;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom:50px;
+}
+
+.ship-image {
+   background: url('../images/ship-image.png') no-repeat;
+  background-size: cover;
+  height: 230px;
+  overflow: hidden;
+}
+
+.hero-image {
+  background: url('../images/bs-final.png') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+  background-position: center center;
+
+  @media (max-width: 768px) {
+  background-position: center
+  }
+
+  .marketing-text {
+    font-size: 80px;
+    margin-top: 195px;
+    text-transform: uppercase;
+    color: $white;
+    text-shadow: 2px 2px 15px $black;
+
+    @media(max-width:767px){
+      font-size: 60px;
+      line-height: 1;
+      margin: 215px 10px 20px;
+    }
+    
+  }
+}
+
+.block-button {
+  background-color: $red;
+  border-radius: 2px;
+  text-transform: uppercase;
+  width: 250px;
+  color: $white;
+  padding: 15px;
+  transition: all 0.5s
+}
+
+.block-button:hover {
+  opacity: .8;
+  color: $white;
+}
+
+.block-button:active {
+  @extend .block-button:hover;
+  opacity: 1;
+}
+
+.block-button:focus {
+  color: $white;
+  @extend .remove-focus-outline;
+}
+
+.video-row {
+  margin: 0 -15px;
+  padding: 40px 0 ;
+  background-color: $white;
+
+  .video-info {
+    max-width: 460px;
+    margin: auto;
+  }
+
+  video {
+    @media(max-width:460px){
+      height:300px;
+      width: 100%;
+    }
+  }
+
+  p {
+    font-weight: 200;
+    letter-spacing: .3px;
+  }
+
+  h3 {
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}

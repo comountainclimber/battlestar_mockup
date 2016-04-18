@@ -1,0 +1,103 @@
+@import 'global_variables';
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 80px;
+  text-align: center;
+
+  @media(max-width:1020px){
+    display: none;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    color: $red;
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .logo {
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s
+  }
+
+  .logo:hover {
+    opacity: .9;
+  }
+
+  .logo img {
+    border-radius: 3px;
+  }
+
+  li {
+    position: relative;
+    width: 150px;
+    list-style: none;
+    -webkit-transition: .25s;
+    transition: .25s;
+  }
+  
+  ul {
+    padding-left: 0px;
+    -webkit-transition: .25s;
+    transition: .25s;
+  } 
+    
+  ul > li > a, h1 {
+    text-transform: uppercase;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: $red;;
+  }
+
+  ul ul {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    font-weight: 300;
+    visibility: hidden;
+    opacity: 0;
+    background-color: $black;
+    border-radius: 5px;
+
+    a {
+      color: grey;
+    }
+  }
+
+  ul ul li a:hover {
+    background-color: $black;
+    color: $white;
+    border: thin solid $white
+  }
+
+  ul ul ul {
+    right: 150px;
+    top: 0px;
+  }
+
+  li li:hover, .navigation li li:hover li {
+    background: rgba(0,0,0,0.85);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  li:hover > ul {
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .main-nav-drop {
+    padding-bottom: 20px;
+  }
+}

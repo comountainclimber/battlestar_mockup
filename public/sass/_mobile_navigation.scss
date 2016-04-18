@@ -1,0 +1,180 @@
+@import 'global_variables';
+
+//hide entire mobile nav view res>1020
+.navbar-default {
+  background-color:rgba(0, 0, 0, 0.84);
+  border-color: transparent;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: 1021px) {
+    display: none;
+  }
+  
+  .navbar-toggle {
+    margin-top: 16px;
+  }
+
+  .navbar-toggle:hover  {
+    background-color: $red;
+  }
+
+  .navbar-toggle:focus {
+    @extend .remove-focus-outline;
+    background-color: $red;
+  }
+
+  .navbar-nav>li>a {
+    color: $red;
+    margin-left:5px;
+  }
+
+  .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+    color: $red;
+
+  }
+
+  .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus {
+    color: $white;
+    background-color: rgba(165, 15, 45, 0.46);
+  }
+
+}
+
+.dropdown-menu {
+  margin: 2px 0 0 5px;
+
+}
+
+.sub-menu-link {
+  color: $red;
+  margin-left: 20px;
+}
+
+.mobile-logo img {
+padding:10px; cursor:pointer
+}
+
+//overwriting the breakpoint that changes the
+//the styling on our nav
+.navbar-nav .open .dropdown-menu {
+  @media (max-width: 1020px){
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  @media (max-width: 1020px) {
+    color: $white;
+  }
+}
+
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  @media (max-width: 1020px) {
+    color: $darkgrey;
+  }
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+  @media (max-width: 1020px) {
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+  @media (max-width: 1020px) {
+    background-color: transparent;
+    color: $darkgrey;
+  }
+}
+
+//restting the default breakpoint in which bootstrap collapses our nav
+//it will always be collapsed on our case while is is visible
+@media (max-width: 1020px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+      // margin-top: 16px;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+.dropdown-submenu>a:after {
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color:#ffffff;
+}
+.dropdown-submenu.pull-left {
+    float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
