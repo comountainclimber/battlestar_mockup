@@ -11,7 +11,6 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.3",
-    // "node-sass-middleware": "^0.9.8",
     "path": "^0.12.7"
   }
 }
