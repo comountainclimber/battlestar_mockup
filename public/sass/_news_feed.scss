@@ -1,14 +1,14 @@
-@import 'global_variables';
+@import "global_variables";
 
 .news-row {
   margin-top: 40px;
 
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     margin-top: 10px;
   }
 
   .news-feed {
-    @media(max-width:767px){
+    @media (max-width: 767px) {
       text-align: center;
     }
 
@@ -22,29 +22,29 @@
 
   p {
     font-weight: 200;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
   }
 
   .news {
-    border-left: solid thin #7E8AA2;
+    border-left: solid thin #7e8aa2;
     margin-bottom: 20px;
 
-  .news-item {
-    margin-top: 20px;
+    .news-item {
+      margin-top: 20px;
 
-    h4 {
-      cursor: pointer;
+      h4 {
+        cursor: pointer;
+      }
     }
-  }
 
-    @media(max-width:991px){
+    @media (max-width: 991px) {
       border-left: 0;
     }
   }
 
   .events {
     margin-bottom: 20px;
-    border-left: solid thin #7E8AA2;
+    border-left: solid thin #7e8aa2;
 
     .event-item {
       margin-top: 20px;
@@ -54,7 +54,7 @@
       }
     }
 
-    @media(max-width:767px){
+    @media (max-width: 767px) {
       border-left: 0;
       background-color: $white;
       padding-top: 10px;
@@ -69,11 +69,10 @@
   }
 
   .salute-image:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   .image-caption {
     cursor: pointer;
   }
-
 }

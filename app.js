@@ -1,8 +1,8 @@
 // Requires \\
-var express = require('express');
-var bodyParser = require('body-parser');
+var express = require("express");
+var bodyParser = require("body-parser");
 // var sassMiddleware = require('node-sass-middleware');
-var path = require('path');
+var path = require("path");
 
 // Create Express App Object \\
 var app = express();
@@ -20,11 +20,11 @@ var app = express();
 // Application Configuration \\
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + "/public")));
 
 // Routes \\
-app.get('/', function(req, res){
-  res.sendFile('index.html', { root: './public' })
+app.get("/", function(req, res) {
+  res.sendFile("index.html", { root: "./public" });
 });
 
 // app.get('*', function(req, res) {
@@ -32,7 +32,7 @@ app.get('/', function(req, res){
 // });
 
 // Creating Server and Listening for Connections \\
-var port = 3000
-app.listen(port, function(){
-  console.log('Server running on port ' + port);
-})
+var port = 3000;
+app.listen(port, function() {
+  console.log("Server running on port " + port);
+});

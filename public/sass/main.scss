@@ -1,7 +1,7 @@
-@import 'navigation';
-@import 'mobile_navigation';
-@import 'news_feed';
-@import 'global_variables';
+@import "navigation";
+@import "mobile_navigation";
+@import "news_feed";
+@import "global_variables";
 
 body {
   background-color: $bodycolor;
@@ -12,28 +12,28 @@ body {
   min-height: 100vh;
   max-width: 1200px;
   margin: auto;
-  background-color:$lightgrey;
+  background-color: $lightgrey;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
 
 .ship-image {
-   background: url('../images/ship-image.png') no-repeat;
+  background: url("../images/ship-image.png") no-repeat;
   background-size: cover;
   height: 230px;
   overflow: hidden;
 }
 
 .hero-image {
-  background: url('../images/bs-final.png') no-repeat;
+  background: url("../images/bs-final.png") no-repeat;
   background-size: cover;
   overflow: hidden;
   height: 500px;
   background-position: center center;
 
   @media (max-width: 768px) {
-  background-position: center
+    background-position: center;
   }
 
   .marketing-text {
@@ -43,12 +43,11 @@ body {
     color: $white;
     text-shadow: 2px 2px 15px $black;
 
-    @media(max-width:767px){
+    @media (max-width: 767px) {
       font-size: 60px;
       line-height: 1;
       margin: 215px 10px 20px;
     }
-    
   }
 }
 
@@ -59,11 +58,11 @@ body {
   width: 250px;
   color: $white;
   padding: 15px;
-  transition: all 0.5s
+  transition: all 0.5s;
 }
 
 .block-button:hover {
-  opacity: .8;
+  opacity: 0.8;
   color: $white;
 }
 
@@ -79,7 +78,7 @@ body {
 
 .video-row {
   margin: 0 -15px;
-  padding: 40px 0 ;
+  padding: 40px 0;
   background-color: $white;
 
   .video-info {
@@ -88,15 +87,15 @@ body {
   }
 
   video {
-    @media(max-width:460px){
-      height:300px;
+    @media (max-width: 460px) {
+      height: 300px;
       width: 100%;
     }
   }
 
   p {
     font-weight: 200;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
   }
 
   h3 {

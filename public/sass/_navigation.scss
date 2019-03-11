@@ -1,14 +1,14 @@
-@import 'global_variables';
+@import "global_variables";
 
 .navigation {
   background-color: rgba(0, 0, 0, 0.65);
   height: 80px;
   text-align: center;
 
-  @media(max-width:1020px){
+  @media (max-width: 1020px) {
     display: none;
   }
-  
+
   .nav-link {
     display: inline-block;
     color: $red;
@@ -24,11 +24,11 @@
     margin: 10px;
     display: inline-block;
     cursor: pointer;
-    transition: all 0.5s
+    transition: all 0.5s;
   }
 
   .logo:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 
   .logo img {
@@ -39,17 +39,18 @@
     position: relative;
     width: 150px;
     list-style: none;
-    -webkit-transition: .25s;
-    transition: .25s;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
   }
-  
+
   ul {
     padding-left: 0px;
-    -webkit-transition: .25s;
-    transition: .25s;
-  } 
-    
-  ul > li > a, h1 {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+
+  ul > li > a,
+  h1 {
     text-transform: uppercase;
   }
 
@@ -57,7 +58,7 @@
     display: block;
     text-decoration: none;
     padding: 8px;
-    color: $red;;
+    color: $red;
   }
 
   ul ul {
@@ -78,7 +79,7 @@
   ul ul li a:hover {
     background-color: $black;
     color: $white;
-    border: thin solid $white
+    border: thin solid $white;
   }
 
   ul ul ul {
@@ -86,15 +87,16 @@
     top: 0px;
   }
 
-  li li:hover, .navigation li li:hover li {
-    background: rgba(0,0,0,0.85);
+  li li:hover,
+  .navigation li li:hover li {
+    background: rgba(0, 0, 0, 0.85);
     padding-left: 0px;
     padding-right: 0px;
   }
 
   li:hover > ul {
-      visibility: visible;
-      opacity: 1;
+    visibility: visible;
+    opacity: 1;
   }
 
   .main-nav-drop {
