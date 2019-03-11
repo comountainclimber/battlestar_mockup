@@ -1,6 +1,6 @@
 # PSD to front-end mock up
 
-front end coding challenge for TapInfluence interview... An arbitrary ask of the interview assignment was to translate the navigation from english to "clingon" - Leveraged a depth first search to translate the JSON which can be seen in `MainCtrl.js`
+front end coding challenge for TapInfluence interview... An arbitrary ask of the interview assignment was to translate the navigation from english to "clingon" I Leveraged a depth first search to translate the JSON which can be seen in `MainCtrl.js`. This application was created using AngularJS and Express.
 
 1.) run <code>npm install</code> to install the node dependencies.
 
